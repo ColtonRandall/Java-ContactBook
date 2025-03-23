@@ -28,10 +28,8 @@ public class Contact {
         this.emailAddress = emailAddress;
     }
 
-    // display contact details
     @Override
     public String toString() {
         return name + " | " + phoneNumber + " | " + emailAddress;
     }
-
 }

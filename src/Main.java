@@ -12,10 +12,11 @@ public class Main {
         System.out.println("1. Add contact");
         System.out.println("2. Remove contact");
         System.out.println("3. View all contacts");
-        System.out.println("4. Search by name");
+        System.out.println("4. Search Contact");
         System.out.println("5. Exit");
         System.out.print("Choose an option: ");
     }
+
 
     public void Run() {
         while (!exit) {
@@ -27,7 +28,6 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    // Add a contact
                     System.out.println("Enter name: ");
                     String name = scanner.nextLine();
                     System.out.println("Enter phone number: ");
@@ -39,7 +39,6 @@ public class Main {
                     break;
 
                 case 2:
-                    // remove contact
                     System.out.println("Enter the name of the contact you would like to remove:\n");
                     String contactToRemove = scanner.nextLine();
                     contactBook.RemoveContact(contactToRemove);
@@ -49,7 +48,8 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Enter the name of the contact you would like to search:\n");
+                    System.out.println("Enter the name, email, or phone number of the contact you would like to " +
+                            "search:\n");
                     String contactToSearch = scanner.nextLine();
                     contactBook.SearchContact(contactToSearch);
                     break;

@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ContactBook {
 
 
     private List<Contact> contacts;
+    Scanner scanner = new Scanner(System.in);
 
     public ContactBook() {
         contacts = new ArrayList<>();
@@ -12,31 +14,31 @@ public class ContactBook {
 
     public void AddContact(Contact contact){
         contacts.add(contact);
-        System.out.println(contact.getName() + " added to Contact Book ✅");
+        System.out.println("✅ " + contact.getName() + " added to Contact Book");
     }
 
     public void RemoveContact(String name){
         contacts.removeIf(contact -> contact.getName().equals(name));
-        System.out.println(name + " removed from Contact Book ✅");
+        System.out.println("✅ " + name + " removed from Contact Book");
     }
 
     public void ViewContacts(){
-        // if the contact list is empty, return a string saying so
         if (contacts.isEmpty()){
-            System.out.println("No contacts found");
+            System.out.println("Contact Book is Empty");
         } else {
             System.out.println("Contacts:");
             for (Contact contact : contacts) {
                 System.out.println(contact.toString());
             }
         }
-        // if contacts exist, loop through them, and output the information
     }
 
-    public void SearchContact(String name){
+    public void SearchContact(String input){
         for(var contact : contacts){
-            if(contact.getName().equals(name)){
-                System.out.println("Contact found: " + contact.toString());
+            if(contact.getName().equals(input) || contact.getPhoneNumber().equals(input) || contact.getEmailAddress().equals(input)){
+                System.out.println("✅ Contact found: " + contact.toString());
+            } else {
+                System.out.println("❌ Contact not found");
             }
         }
     }
