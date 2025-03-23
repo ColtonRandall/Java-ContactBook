@@ -2,16 +2,24 @@
 
 Refreshing prior Java knowledge with a simple OOP console app that creates, and manages contacts within contact book.
 
-![img.png](img.png)
+![img_4.png](img_4.png)
+<hr>
 
-**Add Contact**
+**-- Add Contact --**
+
+![img.png](img.png)
+<hr>
+
+**-- View Contacts --**
 
 ![img_1.png](img_1.png)
+<hr>
 
-**View Contacts**
+**-- Search Contact --**
 
 ![img_2.png](img_2.png)
+<hr>
 
-**Remove Contact**
+**-- Remove Contact --**
 
 ![img_3.png](img_3.png)

@@ -28,33 +28,30 @@ public class Main {
             switch (choice) {
                 case 1:
                     // Add a contact
-                    System.out.println("Enter name:\n");
+                    System.out.println("Enter name: ");
                     String name = scanner.nextLine();
-                    System.out.println("Enter phone number:\n");
+                    System.out.println("Enter phone number: ");
                     String phoneNum = scanner.nextLine();
                     System.out.println("Enter email address: ");
                     String email = scanner.nextLine();
                     Contact newContact = new Contact(name, phoneNum, email);
                     contactBook.AddContact(newContact);
-                    contactBook.ViewContacts();
                     break;
 
                 case 2:
                     // remove contact
-                    System.out.println("Enter the name of the contact you would like to remove: ");
+                    System.out.println("Enter the name of the contact you would like to remove:\n");
                     String contactToRemove = scanner.nextLine();
                     contactBook.RemoveContact(contactToRemove);
-                    contactBook.ViewContacts();
                     break;
                 case 3:
                     contactBook.ViewContacts();
                     break;
 
                 case 4:
-                    System.out.println("Enter the name of the contact you would like to search: ");
+                    System.out.println("Enter the name of the contact you would like to search:\n");
                     String contactToSearch = scanner.nextLine();
                     contactBook.SearchContact(contactToSearch);
-                    contactBook.ViewContacts();
                     break;
 
                 case 5:

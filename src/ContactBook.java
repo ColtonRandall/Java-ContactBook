@@ -12,10 +12,12 @@ public class ContactBook {
 
     public void AddContact(Contact contact){
         contacts.add(contact);
+        System.out.println(contact.getName() + " added to Contact Book ✅");
     }
 
     public void RemoveContact(String name){
         contacts.removeIf(contact -> contact.getName().equals(name));
+        System.out.println(name + " removed from Contact Book ✅");
     }
 
     public void ViewContacts(){
@@ -23,9 +25,9 @@ public class ContactBook {
         if (contacts.isEmpty()){
             System.out.println("No contacts found");
         } else {
-            System.out.println("Contacts:\n");
+            System.out.println("Contacts:");
             for (Contact contact : contacts) {
-                System.out.println(contact.toString() + "\n");
+                System.out.println(contact.toString());
             }
         }
         // if contacts exist, loop through them, and output the information
