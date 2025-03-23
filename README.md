@@ -4,11 +4,14 @@ Refreshing prior Java knowledge with a simple OOP console app that creates, and 
 
 ![img.png](img.png)
 
-**Add contact**
+**Add Contact**
+
 ![img_1.png](img_1.png)
 
 **View Contacts**
+
 ![img_2.png](img_2.png)
 
-**Remove**
+**Remove Contact**
+
 ![img_3.png](img_3.png)
